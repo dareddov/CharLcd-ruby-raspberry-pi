@@ -42,7 +42,7 @@ class CharLcd
   LCD_5x10DOTS = 0x04
   LCD_5x8DOTS = 0x00
 
-  def initialize(pin_rs = 25, pin_e = 24, pins_db = [23, 17, 27, 22])
+  def initialize(pin_rs = 26, pin_e = 19, pins_db = [13, 6, 5, 11])
     RPi::GPIO.set_numbering :bcm
 
     RPi::GPIO.setup pin_rs, :as => :output
